@@ -1,0 +1,12 @@
+{
+  "device": "TANQUE-TEMP-01",
+  "protocol": "modbus-tcp-sim",
+  "unit_id": 1,
+  "registers": [
+    { "name": "nivel_m", "address": 0, "kind": "input", "scale": 0.001, "unit": "m", "warn": null },
+    { "name": "temperatura_c", "address": 1, "kind": "input", "scale": 0.01, "unit": "C", "warn": 8.0 },
+    { "name": "presion_bar", "address": 2, "kind": "input", "scale": 0.001, "unit": "bar", "warn": 0.6 },
+    { "name": "caudal_lpm", "address": 3, "kind": "holding", "scale": 0.01, "unit": "L/min", "warn": 3.5 },
+    { "name": "horas_marcha", "address": 4, "kind": "holding", "scale": 1.0, "unit": "h", "warn": null }
+  ]
+}
