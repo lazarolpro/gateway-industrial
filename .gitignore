@@ -2,3 +2,11 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+build/
+
+# Uso local (no se publican en GitHub)
+gateway.py
+
+# Código fuente, tests y CI: propiedad del autor, no se publican
+tests/
+.github/

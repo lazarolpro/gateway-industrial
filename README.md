@@ -1,10 +1,14 @@
 # Capa 2 — Ingeniería de aplicación / integración de sistemas
 
-[![CI](https://github.com/lazarolpro/gateway-industrial/actions/workflows/ci.yml/badge.svg)](https://github.com/lazarolpro/gateway-industrial/actions/workflows/ci.yml)
 [`lazarolpro/gateway-industrial`](https://github.com/lazarolpro/gateway-industrial) · parte del [portafolio de 9 capacidades](https://github.com/lazarolpro/portafolio)
 
 **Capacidad demostrada:** conectar un equipo de campo con un sistema de
 información, normalizando los datos y exponiéndolos como una API REST/JSON.
+
+> © 2026 Ronny L. Díaz López. **Todos los derechos reservados.** El código fuente,
+> los datos de detalle y los informes completos son propiedad del autor y no se
+> publican. Prohibida su venta o uso comercial sin autorización escrita. Ver
+> [`LICENSE`](LICENSE).
 
 ## Problema real
 
@@ -17,34 +21,28 @@ quedan aislados o se copian a mano.
 - Define un **mapa de registros** (dirección, tipo, escala, unidad, alarma).
 - Simula la lectura del dispositivo (reemplazable por Modbus real).
 - Normaliza y escala cada registro a unidades de ingeniería.
-- Expone `GET /health` y `GET /api/readings` por HTTP.
-- Puede publicar una lectura por consola para encadenar con otros sistemas.
-
-## Cómo ejecutar
-
-```bash
-python gateway.py --once                 # una lectura normalizada (JSON)
-python gateway.py --serve --port 8000    # API REST
-python gateway.py --demo                 # mapa + lectura de ejemplo
-python -m pytest -q
-```
-
-Prueba la API:
-
-```bash
-curl http://localhost:8000/health
-curl http://localhost:8000/api/readings
-```
+- Expone los datos como API REST/JSON y puede publicar una lectura por consola.
 
 ## Evidencia que produce
 
-- `config/device_map.json` — contrato de integración versionado.
-- Salida JSON reproducible (`--once` / `--demo`).
-- Pruebas de integración en verde.
+- [`assets/muestra_integracion.pdf`](assets/muestra_integracion.pdf) — muestra
+  resumida del contrato de integración y de una lectura normalizada (con marca de
+  agua).
+- [`config/device_map.json`](config/device_map.json) — contrato de integración
+  versionado.
+- [`sample_readings.json`](sample_readings.json) — lectura de ejemplo.
+
+## Alcance de este repositorio
+
+Este repositorio es una **vitrina del resultado**: muestra el contrato de
+integración, una lectura normalizada y la muestra del informe. El **código fuente**
+y los **informes completos** son propiedad del autor y se mantienen fuera del
+repositorio público.
 
 ## Stack
 
-Python 3 (biblioteca estándar: `http.server`). Sin dependencias externas.
+Python 3 (solo biblioteca estándar: `http.server`). Sin dependencias externas.
+*(El código no se publica; ver `LICENSE`.)*
 
 ## Por qué le importa a la empresa
 
