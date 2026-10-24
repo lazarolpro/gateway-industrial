@@ -1,4 +1,4 @@
-# Capa 2 — Ingeniería de aplicación / integración de sistemas
+# Capa 2 — Integración de sistemas
 
 [`lazarolpro/gateway-industrial`](https://github.com/lazarolpro/gateway-industrial) · parte del [portafolio de 9 capacidades](https://github.com/lazarolpro/portafolio)
 
