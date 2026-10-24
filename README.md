@@ -23,8 +23,17 @@ quedan aislados o se copian a mano.
 - Normaliza y escala cada registro a unidades de ingeniería.
 - Expone los datos como API REST/JSON y puede publicar una lectura por consola.
 
+## Demo visual
+
+![Lectura normalizada del gateway (equipo → API REST)](assets/gateway_demo.gif)
+
+La animación normaliza cada registro y marca la alarma de caudal. Video completo:
+[`assets/gateway_demo.mp4`](assets/gateway_demo.mp4).
+
 ## Evidencia que produce
 
+- `assets/gateway_demo.mp4`, `gateway_demo.gif`, `gateway_demo_poster.png` — demo
+  visual animado (con miniatura).
 - [`assets/muestra_integracion.pdf`](assets/muestra_integracion.pdf) — muestra
   resumida del contrato de integración y de una lectura normalizada (con marca de
   agua).
