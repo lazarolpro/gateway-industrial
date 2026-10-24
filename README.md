@@ -1,7 +1,7 @@
 # Capa 2 — Ingeniería de aplicación / integración de sistemas
 
 [![CI](https://github.com/lazarolpro/gateway-industrial/actions/workflows/ci.yml/badge.svg)](https://github.com/lazarolpro/gateway-industrial/actions/workflows/ci.yml)
-[`lazarolpro/gateway-industrial`](https://github.com/lazarolpro/gateway-industrial) · parte del [portafolio de 6 capacidades](https://github.com/lazarolpro/portafolio)
+[`lazarolpro/gateway-industrial`](https://github.com/lazarolpro/gateway-industrial) · parte del [portafolio de 9 capacidades](https://github.com/lazarolpro/portafolio)
 
 **Capacidad demostrada:** conectar un equipo de campo con un sistema de
 información, normalizando los datos y exponiéndolos como una API REST/JSON.
@@ -50,3 +50,6 @@ Python 3 (biblioteca estándar: `http.server`). Sin dependencias externas.
 
 Cubre la **integración con APIs de terceros y sistemas internos**: el mismo
 patrón (leer → escalar → normalizar → exponer) sirve para cualquier equipo.
+
+**En mantenimiento:** permite que un equipo de campo alimente el sistema de gestión
+sin copiar datos a mano.
